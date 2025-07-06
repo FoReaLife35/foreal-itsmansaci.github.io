@@ -1,0 +1,347 @@
+:root {
+    --blue: #3979ab;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0,5);
+}
+
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+.home ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/ITBGWeb.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.home {
+    position: relative;
+    min-height: 104vh;
+}
+
+.home h1, .home h4, .home p {
+    text-shadow: var(--shadow);
+}
+
+.home h1 {
+     font-family: "Orbitron", sans-serif;
+     font-size: 5rem;
+}
+
+.home p {
+    font-size: 1.7rem;
+}
+
+.home h4 {
+    font-size: 1.6rem;
+    color: rgba(245, 245, 220, 0.906);
+}
+
+.home a {
+    color: var(--blue);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.home a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(5px); 
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.7rem;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.about {
+    background-image: url(img/ITBGHome5.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+}
+
+.about h2, .subgroup h2, .register h2, .contact h2 {
+    font-family: 'Orbitron';
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about  h3 {
+    font-family: 'Orbitron';
+    font-size: 1.3rem;
+    text-shadow: var(--shadow);
+}
+
+.register p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.about img {
+    width: 40%;
+}
+
+.subgroup {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-image: url(img/ITBGHome1.jpg);
+    background-size: cover;
+}
+
+.linear {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.linear::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1.5px;
+    background-color: black;
+    left: 50%;
+}
+
+.linear li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.linear li::before, .linear li::after {
+    content: '';
+    display: table;
+}
+
+.linear li::after {
+    clear: both;
+}
+
+.linear li .linear-image {
+    width: 160px;
+    height: 160px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linear li .linear-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid black;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: black;
+    background-size: cover;
+}
+
+.linear li .linear-heading h3 {
+    color: white;
+    font-family: 'Orbitron';
+}
+
+.linear li .linear-body p {
+    color: white;
+}
+
+.linear li.linear-inverted .linear-panel {
+    float: right;
+
+}
+
+.register {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-image: url(img/ITBGHome6.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.register h5 {
+    color: red;
+    font-weight: 600;
+    text-shadow: var(--shadow);
+}
+
+.register button {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.register button:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid black;
+}
+
+.contact {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background-image: url(img/ITBGHome3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact a {
+    background-color: black;
+    color: white;
+}
+
+.contact a:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.footer {
+  background-color: #042F62;
+  color: rgb(0, 0, 0); 
+  padding: 20px 0; 
+  text-align: center; 
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.footer-logo img {
+  width: 90px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+.footer-logo h3 {
+  margin-top: 8px; 
+  font-size: 18px; 
+  color: #ffffff; 
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+
+.social-media {
+  margin-top: 15px; 
+}
+
+.social-media a {
+  margin: 0 10px; 
+  color: #fff; 
+  font-size: 24px; 
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px 0; 
+}
+
+.footer-bottom p, a {
+  color: #e3e3e3; 
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  margin: 0; 
+}
+
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+.linear::before {
+    left: 60px;
+}
+
+.linear li .linear-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+}
+
+.linear li .linear-panel {
+    width: calc(100% - 200px);
+    float: right;
+}
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+.mynavbar .nav-link {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sticky-top {
+    overflow: hidden;
+}
+
+.linear li .linear-image {
+    width: 120px;
+    height: 120px;
+}
+
+}
+
+
+/* phone */
+@media (max-width: 546px) {
+    html {
+        font-size: 60%;
+    }
+
+.linear li .linear-image {
+    width: 80px;
+    height: 80px;
+}
+
+.linear li .linear-panel {
+    width: 65%;
+    transform: translateX(-20px);
+
+}
+
+}
