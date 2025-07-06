@@ -76,6 +76,7 @@ body {
 }
 
 .about {
+    position: relative;
     background-image: url(img/ITBGHome5.jpg);
     background-size: cover;
     min-height: 100vh;
@@ -182,6 +183,7 @@ body {
 }
 
 .register {
+    min-height: 100vh;
     padding-top: 10rem;
     padding-bottom: 8rem;
     background-image: url(img/ITBGHome6.jpg);
@@ -341,14 +343,6 @@ body {
     width: 65%;
     transform: translateX(-20px);
 
-}
-
-.mynavbar .nav-link {
-    font-size: 1.5rem;
-}
-
-.sticky-top {
-    overflow: hidden;
 }
 
 }
