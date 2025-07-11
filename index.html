@@ -20,7 +20,7 @@
             <h4>Selamat datang di Situs Web resmi kami</h4>
             <h1>Informasi Teknologi</h1>
             <p>- Futuristic Generation with Technology -</p>
-            <a href="#about" class="btn btn-lg">Informasi lebih lanjut</a>
+            <a href="#about" class="btn btn-lg" onclick="enableScroll()">Informasi lebih lanjut</a>
         </main>
     </section>
 
@@ -206,6 +206,16 @@
           </div>
         </footer>
 
+        <div id="audio-container">
+          <audio id="bgm" autoplay loop>
+            <source src="aud/Sky High x Feel Good Mashup  NCS - Copyright Free Music - NoCopyrightSounds.mp3" type="audio/mp3">
+          </audio>
+
+          <div class="audio-icon-wrapper" style="display: none;">
+            <i class="fas fa-compact-disc"></i>
+          </div>
+        </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -222,6 +232,37 @@ Kanvas.addEventListener('hidden.bs.offcanvas', function() {
 });
 
   </script>
+
+  <script>
+  const bgm = document.querySelector('#bgm');
+  const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+  const audioIcon = document.querySelector('.audio-icon-wrapper i');
+  let isPlaying = false;
+
+   function enableScroll() {
+    window.onscroll = function () { }
+    playAudio();
+  }
+
+  function playAudio() { 
+    audioIconWrapper.style.display = 'flex';
+    bgm.play();
+    isPlaying = true;
+  }
+
+  audioIconWrapper.onclick = function() {
+   if (isPlaying) {
+    bgm.pause();
+   }
+   else {
+    bgm.play();
+   }
+
+   isPlaying = !isPlaying;
+  }
+
+  </script>
+
   <script>
     window.addEventListener("load", function() {
   const form = document.getElementById('my-form');
